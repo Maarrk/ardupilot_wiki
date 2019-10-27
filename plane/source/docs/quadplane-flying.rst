@@ -40,8 +40,9 @@ modes is if you have the :ref:`Q_VFWD_GAIN <Q_VFWD_GAIN>` parameter set to a non
 value. In that case the forward motor will be used to hold the
 aircraft level in a wind. See the description of :ref:`Q_VFWD_GAIN <Q_VFWD_GAIN>`.
 
-.. note::
- Tilt-Rotor Quadplanes do not have the capability of using Q_VFWD_GAIN, since there is no separate foward motor.
+.. note:
+
+For Tilt-Rotor Quadplanes with non-zero :ref:`Q_VFWD_GAIN <Q_VFWD_GAIN>`: in fixed wing assisted flight or velocity controlled modes the tilt angle is set based on the demanded forward throttle, with a maximum tilt given by Q_TILT_MAX.
  
 Assisted fixed-wing flight
 ==========================
